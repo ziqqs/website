@@ -2,6 +2,7 @@ USE simpleGym;
 DROP TABLE IF EXISTS tblOrder;
 DROP TABLE IF EXISTS tblCustomer;
 DROP TABLE IF EXISTS tblProduct;
+DROP TABLE IF EXISTS tblBlog;
 
 CREATE TABLE tblCustomer (
     fistName VARCHAR(20),
@@ -38,4 +39,13 @@ CREATE TABLE tblOrder (
     PRIMARY KEY (orderId),
     FOREIGN KEY (productName) REFERENCES tblProduct(productName),
     FOREIGN KEY (email) REFERENCES tblCustomer(email)
+);
+
+CREATE TABLE tblBlog (
+    email VARCHAR(255),
+    _date VARCHAR(20),
+    _time VARCHAR(20),
+    subject VARCHAR(50),
+    message VARCHAR(1000),
+    PRIMARY KEY (email)
 );
