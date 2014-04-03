@@ -37,7 +37,7 @@ function login($user) {
     session_destroy();
     session_start();
     $_SESSION['user'] = $user;
-    print_r($_SESSION);
+    goUserPage();
 }
 
 function fetchUser() {
@@ -65,5 +65,10 @@ function fetchUser() {
 
 function goBack() {
     header("Location: login.php");
+    exit;
+}
+
+function goUserPage() {
+    header("Location: userpage.php");
     exit;
 }
