@@ -43,7 +43,7 @@ $input = $_SESSION['input'];
                 <tr><td>First Name: </td><td><input type="text" name="firstName" value="<?php echo $input['firstName'] ?>" /></td><td><?php echo $errors['firstName'] ?></td></tr>
                 <tr><td>Last Name: </td><td><input type="text" name="lastName" value="<?php echo $input['lastName']?>"/></td><td><?php echo $errors['lastName'] ?></td></tr>
                 <tr><td>House Number: </td><td><input type="number" name="houseNumber" value="<?php echo $input['houseNumber']?>"/></td><td><?php echo $errors['houseNumber'] ?></td></tr>
-                <tr><td>Street: </td><td><input type="text" name="streetName" value="<?php echo $input['streetName']?>"/></td><<td><?php echo $errors['streetName'] ?></td></tr>
+                <tr><td>Street: </td><td><input type="text" name="streetName" value="<?php echo $input['streetName']?>"/></td><td><?php echo $errors['streetName'] ?></td></tr>
                 <tr><td>City: </td><td><input type="text" name="city" value="<?php echo $input['city']?>"/></td><td><?php echo $errors['city'] ?></td></tr>
                 <tr><td>Postcode: </td><td><input type="text" name="postcode" value="<?php echo $input['postcode']?>"/></td><td><?php echo $errors['postcode'] ?></td></tr>
                 <tr><td>Email Address: </td><td><input type="text" name="email" value="<?php echo $input['email']?>"/></td><td><?php echo $errors['email'] ?></td></tr>
