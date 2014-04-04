@@ -78,7 +78,7 @@ body{
     vertical-align: middle;
 	padding-right:5px;
 }
-..socialMedia a:last-child {
+.socialMedia a:last-child {
     display: table-cell;
     vertical-align: middle;
 	padding-right:0px;
@@ -365,7 +365,7 @@ body{
 	-webkit-box-orient:vertical;
 	-webkit-box-flex:1;
 	
-	display:-ms-box;.
+	display:-ms-box;
 	-ms-box-orient:vertical;
 	-ms-box-flex:1;
 	
