@@ -11,7 +11,9 @@ session_start();
         <h1>Order</h1>
         <h3>You have ordered:</h3>
         <?php
-        $con = mysqli_connect("localhost", "root", "", "simplegym");
+        include 'mysql.php';
+        $con = $connection;
+      //  $con = mysqli_connect("localhost", "root", "", "simplegym");
         $user = $_SESSION['user'];
         
         foreach ($_SESSION as $key => $value) {

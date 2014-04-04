@@ -6,7 +6,9 @@
     </head>
     <body>
         <?php
-        $con = mysqli_connect("localhost", "root", "", "simplegym");
+        include 'mysql.php';
+        $con = $connection;
+        //$con = mysqli_connect("localhost", "root", "", "simplegym");
         $result = mysqli_query($con, "SELECT * FROM tblProduct");
         echo "<h1>Shop</h1>";
         echo "<table>";

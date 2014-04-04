@@ -1,7 +1,7 @@
 <?php
 
 $server = "localhost";
-$user = "simplegym";
+$user = "simpleGym";
 $password = "password";
 $database = "simpleGym";
 
