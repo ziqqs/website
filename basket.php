@@ -22,7 +22,7 @@ if (!isset($_SESSION['user'])){
         }
         echo "<h1>Basket</h1>";
         foreach ($_SESSION as $key => $value){
-            if ($key != 'user'){
+            if ($key != 'user' && $key != 'errors'){
                 echo "<p>$key - $value</p>";
             }
         }

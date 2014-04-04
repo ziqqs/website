@@ -17,7 +17,7 @@ session_start();
         $user = $_SESSION['user'];
         
         foreach ($_SESSION as $key => $value) {
-            if ($key != 'user'){
+            if ($key != 'user' && $key != 'errors'){
                 $query = "INSERT INTO tblOrder VALUES (null, \"$user\", \"$key\","
                         . "$value";
                 mysqli_query($con, $query);
