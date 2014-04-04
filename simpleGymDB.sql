@@ -25,11 +25,11 @@ CREATE TABLE tblProduct (
 );
 
 INSERT INTO tblProduct VALUES
-    ("Membership 30 days", "what it sounds like" , "30" , "images/mebership1.png"),
-    ("Membership 90 days", "what it sounds like" , "80" , "images/membership2.png"),
-    ("Membership 1 year", "what it sounds like" , "1000" , "images/membership3.png"),
-    ("Membership 5 years","what it sounds like" , "4000" , "images/membership4.png"),
-    ("Membership4Life","what it sounds like" , "100000" , "images/membership5.png");
+    ("Membership 30 days", "images/membership1.jpg", 80, "what does is sound like?"),
+    ("Membership 90 days", "images/membership2.jpg", 200, "what does is sound like?"),
+    ("Membership 1 year", "images/membership3.jpg", 600, "what does is sound like?"),
+    ("Membership 5 years", "images/membership4.jpg", 2500, "what does is sound like?"),
+    ("Membership4Life", "images/membership5.jpg", 100000, "what does is sound like?");
 
 CREATE TABLE tblOrder (
     orderId smallint AUTO_INCREMENT,
